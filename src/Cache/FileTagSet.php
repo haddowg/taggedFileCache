@@ -8,6 +8,16 @@ class FileTagSet extends TagSet{
 
 	protected static $driver = 'tfile';
 	
+	 /**
+     	  * Get a unique namespace that changes when any of the tags are flushed.
+          *
+          * @return string
+          */
+         public function getNamespace()
+         {
+	      return implode('~', $this->tagIds());
+         }
+	
 	/**
 	 * Get the tag identifier key for a given tag.
 	 *

@@ -1,8 +1,8 @@
 <?php
 
-use Unikent\Cache\TaggableFileStore;
-use Unikent\Jobs\FlushTagFromFileCacheJob;
-use Unikent\Cache\FileTagSet;
+use haddowg\Cache\TaggableFileStore;
+use haddowg\Jobs\FlushTagFromFileCacheJob;
+use haddowg\Cache\FileTagSet;
 use Illuminate\Contracts\Bus\Dispatcher;
 
 class FileTagSetTest extends BaseTest

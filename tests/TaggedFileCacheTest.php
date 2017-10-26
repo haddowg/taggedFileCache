@@ -1,8 +1,8 @@
 <?php
 
-use Unikent\Cache\TaggableFileStore;
-use Unikent\Cache\TaggedFileCache;
-use Unikent\Cache\FileTagSet;
+use haddowg\Cache\TaggableFileStore;
+use haddowg\Cache\TaggedFileCache;
+use haddowg\Cache\FileTagSet;
 
 class TaggedFileCacheTest extends BaseTest
 {
@@ -34,10 +34,14 @@ class TaggedFileCacheTest extends BaseTest
 	public function testTaggedItemKeyGeneratesCorrectlyNamespacedKey(){
 
 		$store = new TaggableFileStore($this->app['files'], storage_path('framework/cache'),[]);
+
+        \Cache::forever('cache_tags~#~foobar','56dc3ce3ed37d104639966');
 		$cache = new TaggedFileCache($store, new FileTagSet($store, ['foobar']));
+
 
 		$this->assertEquals('56dc3ce3ed37d104639966~#~test',$cache->taggedItemKey('test'));
 
+        \Cache::forever('cache_tags~#~boofar','56dbfe2ea297d983644626');
 		$cache = new TaggedFileCache($store, new FileTagSet($store, ['boofar']));
 		$this->assertEquals('56dbfe2ea297d983644626~#~arg',$cache->taggedItemKey('arg'));
 	}

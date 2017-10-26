@@ -1,6 +1,6 @@
 <?php
 
-use Unikent\Cache\TaggableFileCacheServiceProvider;
+use haddowg\Cache\TaggableFileCacheServiceProvider;
 
 abstract class BaseTest extends Orchestra\Testbench\TestCase
 {

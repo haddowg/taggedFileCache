@@ -1,7 +1,7 @@
 {
-    "name": "unikent/tfilecache",
+    "name": "haddowg/tfilecache",
     "description": "Taggable File Cache driver for Laravel. Allows the use of Cache tags with a file cache.",
-    "version" : "1.0.8",
+    "version" : "1.0.9",
     "authors": [
         {
             "name": "gjmh-unikent",
@@ -15,7 +15,7 @@
     },
     "autoload": {
 	    "psr-4": {
-	      "Unikent\\": "src/"
+	      "haddowg\\": "src/"
 	    }
 	}
 }

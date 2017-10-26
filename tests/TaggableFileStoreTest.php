@@ -1,9 +1,9 @@
 <?php
 
 use Orchestra\Testbench\Contracts\TestCase;
-use Unikent\Cache\TaggableFileStore;
-use Unikent\Cache\TaggableFileCacheServiceProvider;
-use Unikent\Cache\TaggedFileCache;
+use haddowg\Cache\TaggableFileStore;
+use haddowg\Cache\TaggableFileCacheServiceProvider;
+use haddowg\Cache\TaggedFileCache;
 
 class TaggableFileStoreTest extends BaseTest
 {

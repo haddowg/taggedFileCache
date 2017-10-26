@@ -1,6 +1,8 @@
 # Laravel Taggable File Cache
 This package provides a custom file [cache driver](https://laravel.com/docs/5.1/cache#adding-custom-cache-drivers) that supports [Cache Tags](https://laravel.com/docs/5.1/cache#cache-tags) for Laravel 5.1 or Lumen 5.2+.
 
+Based on the original repo https://github.com/unikent/taggedFileCache
+
 ## Usage
 This product is publicly available under the terms of the MIT license included in this repository. Please refer to the current [brand guidelines](https://www.kent.ac.uk/brand) for use of the existing brand.
 
@@ -14,7 +16,7 @@ Then, update `config/app.php` by adding an entry for the service provider.
 ```
 'providers' => [
     // ...
-    Unikent\Cache\TaggableFileCacheServiceProvider::class
+    haddowg\Cache\TaggableFileCacheServiceProvider::class
 ];
 ```
 Finally, add the necessary config to  `config\cache.php`. 

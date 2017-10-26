@@ -1,11 +1,12 @@
 {
     "name": "haddowg/tfilecache",
+    "license": "MIT",
     "description": "Taggable File Cache driver for Laravel. Allows the use of Cache tags with a file cache.",
     "version" : "1.0.9",
     "authors": [
         {
-            "name": "gjmh-unikent",
-            "email": "g.haddow@kent.ac.uk"
+            "name": "haddowg",
+            "email": "greg@greghaddow.co.uk"
         }
     ],
     "require": {},
